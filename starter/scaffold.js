@@ -491,12 +491,12 @@ ${answers.hobbies || 'Not specified'}
 
 ## The Four Layers
 
-\\`\\`\\`
+\`\`\`
 Layer 1: Identity     → user.md, soul.md       (who ${name} is)
 Layer 2: Memory       → memory.md              (what's happening now)
 Layer 3: Knowledge    → wiki/                  (compiled wiki)
 Layer 4: Execution    → skills/, crons/         (how things get done)
-\\`\\`\\`
+\`\`\`
 
 ## Memory Files (Load at Session Start)
 
@@ -506,7 +506,7 @@ Layer 4: Execution    → skills/, crons/         (how things get done)
 
 ## The Knowledge Wiki (wiki/)
 
-\\`\\`\\`
+\`\`\`
 wiki/
 ├── index.md           # Catalog of everything
 ├── log.md            # Timeline of all operations
@@ -518,7 +518,7 @@ wiki/
 ├── projects/        # Work/projects
 ├── synthesis/       # Cross-topic insights
 └── profile/         # User model (identity, values, mind, career, financial, relationships, health, strengths, mistakes, preferences)
-\\`\\`\\`
+\`\`\`
 
 ## Thinking Methods
 
@@ -562,7 +562,7 @@ Apply these visibly in responses. State which method you're using and why.
 
 Every significant decision gets its own page.
 
-\\`\\`\\`yaml
+\`\`\`yaml
 ---
 created: YYYY-MM-DD
 decision: What was decided
@@ -570,7 +570,7 @@ context: What led to this
 alternatives: What else was considered
 outcome: pending | positive | negative | mixed
 ---
-\\`\\`\\`
+\`\`\`
 
 When ${name} makes a decision: "Should I log this decision?" → create page.
 When outcome is known: "How did that work out?" → update page.
@@ -579,7 +579,7 @@ When outcome is known: "How did that work out?" → update page.
 
 Every significant conversation gets a log entry.
 
-\\`\\`\\`yaml
+\`\`\`yaml
 ---
 created: YYYY-MM-DD
 topic: What was discussed
@@ -588,7 +588,7 @@ decisions: Any decisions made
 followups: Open items
 thinking_methods: Which frameworks were used
 ---
-\\`\\`\\`
+\`\`\`
 
 ## Self-Evolution
 
@@ -660,29 +660,29 @@ A Second Brain is a compiled knowledge base that evolves with you. Based on [Kar
 ## How to use
 
 1. **With Claude Code:**
-   \\`\\`\\`bash
+   \`\`\`bash
    claude
-   \\`\\`\\`
+   \`\`\`
 
 2. **With Hermes:**
    Point Hermes to this directory and say hello.
 
 ## Structure
 
-- \\`CLAUDE.md\\` — Your personalized agent config
-- \\`user.md\\` — Your identity
-- \\`soul.md\\` — AI personality
-- \\`memory.md\\` — Working context
-- \\`wiki/\\` — Your compiled knowledge
-  - \\`profile/\\` — Your user model
-  - \\`decisions/\\` — Decision log
-  - \\`interactions/\\` — Conversation log
-- \\`skills/\\` — Reusable workflows
-- \\`raw/\\` — Source documents
+- \`CLAUDE.md\` — Your personalized agent config
+- \`user.md\` — Your identity
+- \`soul.md\` — AI personality
+- \`memory.md\` — Working context
+- \`wiki/\` — Your compiled knowledge
+  - \`profile/\` — Your user model
+  - \`decisions/\` — Decision log
+  - \`interactions/\` — Conversation log
+- \`skills/\` — Reusable workflows
+- \`raw/\` — Source documents
 
 ## Core operations
 
-- **Ingest:** Drop a source in \\`raw/\\` and say "Ingest raw/filename"
+- **Ingest:** Drop a source in \`raw/\` and say "Ingest raw/filename"
 - **Query:** Ask anything — AI reads compiled wiki
 - **Lint:** Say "Lint the wiki" for health check
 
@@ -694,4 +694,4 @@ ${new Date().toISOString().split('T')[0]}
   console.log(`  Created: README.md`);
 }
 
-module.exports = { scaffoldWiki, generateCLAUDE, saveProfile };
+module.exports = { scaffoldWiki, generateCLAUDE };

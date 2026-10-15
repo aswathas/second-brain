@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { questions, phases } = require('./questions');
-const { scaffoldWiki, generateCLAUDE, saveProfile } = require('./scaffold');
+const { scaffoldWiki, generateCLAUDE } = require('./scaffold');
 const fs = require('fs');
 const path = require('path');
 
